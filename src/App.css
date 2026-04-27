@@ -484,3 +484,79 @@ body {
 .search-card, .details-card {
   backdrop-filter: blur(10px);
 }
+
+
+/* Add these new styles to your existing App.css */
+
+.loading-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 40px;
+  color: #667eea;
+  font-size: 14px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+}
+
+.no-results-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.no-results h4 {
+  color: #666;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.no-results p {
+  font-size: 14px;
+  color: #999;
+}
+
+/* Search input enhancement */
+.search-input {
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: #bbb;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Better suggestion item styling */
+.suggestion-item {
+  transition: all 0.2s ease;
+}
+
+.suggestion-item:active {
+  transform: scale(0.98);
+}
+
+/* Loading state */
+.loading-more {
+  padding: 15px;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .loading-initial {
+    padding: 30px;
+  }
+  
+  .no-results {
+    padding: 40px 20px;
+  }
+  
+  .no-results-icon {
+    font-size: 48px;
+  }
+}
